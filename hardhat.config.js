@@ -12,11 +12,11 @@ module.exports = {
     },
     mainnet: {
       url: "https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID", // Replace with your Infura project ID
-      //accounts: [process.env.MAINNET_PRIVATE_KEY], // Use your private key from environment variables
+      accounts: [process.env.MAINNET_PRIVATE_KEY], // Use your private key from environment variables
     },
     goerli: {
       url: "https://fragrant-proportionate-butterfly.ethereum-goerli.discover.quiknode.pro/bffa06d434993eb918eb596c12db367e9bb49118/", // Replace with your Infura project ID
-      //accounts: [process.env.GOERLI_PRIVATE_KEY], // Use your private key from environment variables
+      accounts: [process.env.GOERLI_PRIVATE_KEY], // Use your private key from environment variables
     },
     // ... other networks
   },
