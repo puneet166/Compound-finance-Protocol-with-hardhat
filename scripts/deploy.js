@@ -6,7 +6,7 @@ async function main() {
 
   // Replace these addresses with the actual addresses
   const daiTokenAddress = "0x2899a03ffDab5C90BADc5920b4f53B0884EB13cC"; // Dai address for goreli testnet. change accordingly for mainnet
-  const cDaiTokenAddress = "0x0545a8eaF7ff6bB6F708CbB544EA55DBc2ad7b2a"; //address for goreli testnet. change accordingly for mainnet
+  const cDaiTokenAddress = "0x0545a8eaF7ff6bB6F708CbB544EA55DBc2ad7b2a"; // CDai address for goreli testnet. change accordingly for mainnet
 
   // Deploy the CompoundNFT contract with the specified addresses
   const compoundNFT = await CompoundNFT.deploy(daiTokenAddress, cDaiTokenAddress);
