@@ -26,7 +26,8 @@ Follow these steps:
     ``` npx hardhat node --fork https://goerli.infura.io/v3/20f4e4de34cf4272b76fe44eafb89b84 ```
 
 6. Once you forked the Goerli testnet, it will be available at `http://localhost:8545`.
-7. Run the following command to execute the test cases:
+7. Open the second terminal 
+8. Run the following command to execute the test cases:
 
     ``` npx hardhat test --network localFork ```
 
