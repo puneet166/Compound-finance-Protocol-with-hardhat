@@ -50,7 +50,7 @@ To deploy the smart contract on the forked localhost, follow these steps:
 
 ## NOTE - You also run this smart contract on remix.ide . 
 
-contract location - contracts/CompoundNFT . 
+contract location - contracts/CompoundNFT . This is flattern file
 
 This smart contract well tested on goreli testnet . i am sharing some Tx hash so you can take a look - 
 
