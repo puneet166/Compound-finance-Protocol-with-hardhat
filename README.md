@@ -2,10 +2,12 @@
 
 ## How Smart Contract Works
 
-Before invoking the `mint` function of smart contract , ensure that your contract has an allowance to spend DAI on your behalf. Otherwise, it will result in an allowance error.
+* Before invoking the `mint` function of smart contract , ensure that your contract has an allowance to spend DAI on your behalf. Otherwise, it will result in an allowance error.
 
-The code is structured in a way and it follows best practices and is thoroughly commented to facilitate easy understanding.
-
+* The code is structured and it follows best practices and is thoroughly commented to facilitate easy understanding.
+* It has been thoroughly tested on the Goreli testnet.
+* It ensure the security concern and prevent unauthorized access.
+  
 ## Running Test Cases
 
 Before proceeding, make sure you have the following installed:
@@ -16,43 +18,45 @@ Before proceeding, make sure you have the following installed:
 Follow these steps:
 
 1. Clone the project.
-2. Run `npm i`.
-3. Fork the Goerli testnet. (Test cases are written according to this testnet and have been thoroughly tested on Goerli.) If you'd like to switch to the mainnet, read the comments within the testing code file and adjust the addresses of Dai and CDai tokens accordingly.
-4. To fork the Goerli testnet, run the command:
+2. Go to the project directory.
+3. Run `npm i`.
+4. Fork the Goerli testnet. (Test cases are written according to this testnet and have been thoroughly tested on Goerli.) If you'd like to switch to the mainnet, read the comments within the testing code file and adjust the addresses of Dai and CDai tokens accordingly.
+5. To fork the Goerli testnet, run the command:
 
-``` npx hardhat node --fork https://goerli.infura.io/v3/20f4e4de34cf4272b76fe44eafb89b84 ```
+    ``` npx hardhat node --fork https://goerli.infura.io/v3/20f4e4de34cf4272b76fe44eafb89b84 ```
 
-5. Once you have forked the Goerli testnet, it will be available at `http://localhost:8545`.
-6. Run the following command to execute the test cases:
+6. Once you forked the Goerli testnet, it will be available at `http://localhost:8545`.
+7. Run the following command to execute the test cases:
 
-``` npx hardhat test --network localFork ```
+    ``` npx hardhat test --network localFork ```
 
-## Deploying the Smart Contract on localhost:8545
+## Deploy the Smart Contract on localhost:8545
 
-To deploy the smart contract on the forked localhost, follow these steps:
+To deploy the smart contract on the forked localhost :
 
-1. Run the command:
-``` npx hardhat run --network localFork scripts/deploy.js ```
+* Run the command:
+    ``` npx hardhat run --network localFork scripts/deploy.js ```
 
-## Deploying the Smart Contract on Goerli testnet (before deploy contract on goerli add your private key in .env file
+## Deploy the Smart Contract on Goerli testnet (before deploy contract on goerli add your private key in .env file
 
-1. Run the command:
+* Run the command:
 
 ``` npx hardhat run --network goerli scripts/deploy.js ```
 
 ## Deploying the Smart Contract on Mainnet (before deploy smart contract on mainnet First change the rpc url of mainnet in hardhat.config.js file and add your private key in .env file
 
-1. Run the command:
+* Run the command:
 
 ``` npx hardhat run --network mainnet scripts/deploy.js ```
 
 ---
 
-## NOTE - You also run this smart contract on remix.ide . 
+## NOTE - You also run this smart contract on remix.IDE  
 
-contract location - contracts/CompoundNFT . This is flattern file
+* Contract location - contracts/CompoundNFT .
+* This is flattern file
 
-This smart contract well tested on goreli testnet . i am sharing some Tx hash so you can take a look - 
+### This smart contract well tested on goreli testnet . i am sharing some Tx hash so you can take a look - 
 
 1. https://goerli.etherscan.io/tx/0x4088013ca3f226e3f8b244a5efe3ec38c5d45dcfeaa77792c3a27bd8496f1983
 2. https://goerli.etherscan.io/tx/0xd9b4eca742b3d1b546f36c167de33e0c5cc9941015e3d84d0b615ab34c676e4d
