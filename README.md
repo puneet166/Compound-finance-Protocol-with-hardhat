@@ -34,13 +34,13 @@ To deploy the smart contract on the forked localhost, follow these steps:
 1. Run the command:
 ``` npx hardhat run --network localFork scripts/deploy.js ```
 
-## Deploying the Smart Contract on Goerli testnet 
+## Deploying the Smart Contract on Goerli testnet (before deploy contract on goerli add your private key in .env file
 
 1. Run the command:
 
 ``` npx hardhat run --network goerli scripts/deploy.js ```
 
-## Deploying the Smart Contract on Mainnet (before deploy smart contract on mainnet First change the rpc url of mainnet in hardhat.config.js file  
+## Deploying the Smart Contract on Mainnet (before deploy smart contract on mainnet First change the rpc url of mainnet in hardhat.config.js file and add your private key in .env file
 
 1. Run the command:
 
