@@ -29,7 +29,7 @@ Follow these steps:
 7. Open the second terminal 
 8. Run the following command to execute the test cases:
 
-    ``` npx hardhat test --network localFork ```
+    ``` npx hardhat test --network localFolk ```
 
 ## Deploy the Smart Contract on localhost:8545
 
