@@ -36,7 +36,7 @@ Follow these steps:
 To deploy the smart contract on the forked localhost :
 
 * Run the command:
-    ``` npx hardhat run --network localFork scripts/deploy.js ```
+    ``` npx hardhat run --network localFolk scripts/deploy.js ```
 
 ## Deploy the Smart Contract on Goerli testnet (before deploy contract on goerli add your private key in .env file
 
