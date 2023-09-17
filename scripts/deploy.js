@@ -1,6 +1,10 @@
 const { ethers, upgrades } = require("hardhat");
 
 async function main() {
+
+  const [deployer] = await ethers.getSigners();
+  console.log(`Deploying contracts with account: ${deployer.address}`); 
+
   // Retrieve the contract factory for "CompoundNFT"
   const CompoundNFT = await ethers.getContractFactory("CompoundNFT");
 
