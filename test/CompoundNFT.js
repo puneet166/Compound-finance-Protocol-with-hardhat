@@ -25,7 +25,7 @@ describe('CompoundNFT', () => {
       [owner, addr2] = await ethers.getSigners(); // Get multiple signers
 
       const CompoundNFT = await ethers.getContractFactory('CompoundNFT');
-      mintingPrice = ethers.parseUnits("1", 18); // 1 DAI in wei , change accordingly.
+      mintingPrice = ethers.parseUnits("100", 18); // 100 DAI in wei , change accordingly.
 
       // For goreli testnet . These all address will ultilze in goreli testnet folk.
 
